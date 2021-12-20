@@ -1,9 +1,8 @@
 .userPost {
     width: 100%;
-    height: 512px;
     min-height: 512px;
-    background-color: blue;
+    background-color: white;
     display: flex;
     flex-direction: column;
-    margin-bottom: 64px;
+    height: fit-content;
 }

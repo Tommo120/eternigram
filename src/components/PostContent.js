@@ -1,16 +1,13 @@
-import {Component} from 'react';
 import '../css/PostContent.css';
 
-export default class PostContent extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {  }
-    }
-    render() { 
-        return ( 
-            <div className="postContent">
-                <img className="contentImage" src="https://picsum.photos/200"/>
-            </div>
-         );
-    }
+export const PostContent = ({postImage}) => {
+    let imageClassName = "contentImage " + postImage.id;
+    //const image = document.getElementsByClassName(imageClassName);
+    //image.style.
+
+    return ( 
+        <div className="postContent">
+            <img className={imageClassName} src={postImage}/>
+        </div>
+    );
 }

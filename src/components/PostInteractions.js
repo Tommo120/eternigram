@@ -1,15 +1,11 @@
-import {Component} from 'react';
+import '../css/PostInteractions.css';
 
-export default class PostInteractions extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {  }
-    }
-    render() { 
-        return ( 
-            <div>
-
-            </div>
-         );
-    }
+export const PostInteractions = () => {
+    return ( 
+        <div className="postInteractions">
+            <p>Some things go here!</p>
+            <p>And more things go gere!</p>
+            <p>Is this enough things?</p>
+        </div>
+    );
 }

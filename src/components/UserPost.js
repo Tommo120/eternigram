@@ -1,21 +1,14 @@
-import {Component} from 'react';
-import PostUser from './PostUser';
-import PostContent from './PostContent';
-import PostInteractions from './PostInteractions';
+import {PostUser} from './PostUser';
+import {PostContent} from './PostContent';
+import {PostInteractions} from './PostInteractions';
 import '../css/UserPost.css'
 
-export default class UserPost extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {  }
-    }
-    render() { 
-        return ( 
-            <div className="userPost">
-                <PostUser/>
-                <PostContent/>
-                <PostInteractions/>
-            </div>
-         );
-    }
+export const UserPost = ({postContent}) => {    
+    return ( 
+        <div className="userPost">
+            <PostUser postAuthor={postContent.author}/>
+            <PostContent postImage={postContent.download_url}/>
+            <PostInteractions/>
+        </div>
+    );
 }
